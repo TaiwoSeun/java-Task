@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <title>JavaScript task three</title>
+        <body>
+            <script>
+                //The function of a parameter
+                function divisible(num){
+                
+                //Empty array that encompass number
+                    let integer = [];
+
+                // This loop through the array and check conditions
+                    for( let i = 1; i <= num; i++) {
+                         if(i%2 === 0 && i%3 === 0 && i%5 === 0) {
+                             integer.push("yu-gi-oh");
+                         }
+
+                         else if(i%2 === 0 && i%3 === 0) {
+                             integer.push("yu-gi");
+                         }
+
+                         else if(i%2 === 0 && i%5 === 0) {
+                             integer.push("yu-oh");
+                         }
+
+                         else if(i%3 === 0 && i%5 === 0) {
+                            integer.push("gi-oh");
+                         }
+
+                         else if(i%2 === 0) {
+                            integer.push("yu");
+                         }
+
+                         else if(i%3 === 0) {
+                            integer.push("gi");
+                         }
+                         else if(i%5 === 0) {
+                            integer.push("oh");
+                         }
+
+                         else{
+                            integer.push(i);
+                         }
+                    }
+
+                    //This displays the array
+                    console.log(integer);
+
+                    //This returns array that contains numbers from 1 to passed argument
+                    return integer;
+                }
+
+                //This call the funtion and 100 was passed as an argument
+                divisible(100);
+                
+                //This call the function and a random number was passed
+                divisible(55);
+
+            </script>
+        </body>
+    </head>
+</html>
